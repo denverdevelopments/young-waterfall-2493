@@ -1,0 +1,5 @@
+<h1>Studios Index</h1>
+
+<% @studios.each do |studio| %>
+<p><%= link_to "#{@studio.name}", "studios/#{@studio.id}" %></p><br/>
+<% end %>

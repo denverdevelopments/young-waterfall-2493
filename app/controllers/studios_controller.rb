@@ -7,5 +7,6 @@ class StudiosController < ApplicationController
     @studio = Studio.find(params[:id])
     @movies = @studio.movies
   end
+  # <p>* <%= movie.title %></p>
 
 end

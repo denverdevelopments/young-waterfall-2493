@@ -1,5 +1,4 @@
-<h1><%= @studio.name %></h1>
-<h3><%= @studio.location %></h3><br/>
+<h1>Movies Index</h1>
 
 <% @movies.each do |movie| %>
 <p><%= link_to "#{@movie.title}", "movies/#{@movie.id}" %></p><br/>

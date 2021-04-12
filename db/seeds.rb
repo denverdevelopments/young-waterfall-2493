@@ -20,11 +20,13 @@ princess = focus.movies.create!(title: 'The Princess Bride', creation_year: 1987
 empire = lucas.movies.create!(title: 'The Empire Strikes Back', creation_year: 1980, genre: 'Adventure')
 jedi = lucas.movies.create!(title: 'Return of the Jedi', creation_year: 1983, genre: 'Adventure')
 
-ford = Actor.create!(name: 'Harrison Ford', age: 78, working: false)
 hamill = Actor.create!(name: 'Mark Hamill', age: 69, working: true)
 elwes = Actor.create!(name: 'Cary Elwes', age: 58, working: true)
+ford = Actor.create!(name: 'Harrison Ford', age: 78, working: false)
 
 ActorMovie.create!(actor: ford, movie: empire)
 ActorMovie.create!(actor: hamill, movie: empire)
+ActorMovie.create!(actor: ford, movie: jedi)
+ActorMovie.create!(actor: hamill, movie: jedi)
 ActorMovie.create!(actor: elwes, movie: princess)
 ActorMovie.create!(actor: ford, movie: princess)
