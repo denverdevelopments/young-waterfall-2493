@@ -2,6 +2,7 @@ class Actor < ApplicationRecord
   validates_presence_of :name
   validates_presence_of :age
   validates_numericality_of :age
+  # validates :working, inclusion: { in: [ true, false ] }
   # validates_presence_of :working, inclusion: [true, false]
 
 

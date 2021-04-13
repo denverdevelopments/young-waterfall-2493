@@ -36,6 +36,13 @@ RSpec.describe "user visits the studio show", type: :feature do
       expect(page).to have_content("Mark Hamill")
     end
 
+    it "shows list of actors in any of the studio's movies" do
+      visit "/studios/#{@lucas.id}"
+
+      expect(page).to have_content("Harrison Ford")
+      expect(page).to have_content("Mark Hamill")
+    end
+
 # Story 2  Studio's Actors
 # As a user, When I visit a studio show page
 # I see a list of actors that have acted in any of the studio's movies

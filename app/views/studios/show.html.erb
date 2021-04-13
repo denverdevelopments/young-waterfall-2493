@@ -2,5 +2,5 @@
 <h3><%= @studio.location %></h3><br/>
 
 <% @movies.each do |movie| %>
-<p><%= link_to "#{@movie.title}", "movies/#{@movie.id}" %></p><br/>
+<p><%= link_to "#{movie.title}", "movies/#{movie.id}" %></p><br/>
 <% end %>
